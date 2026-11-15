@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">João Roberto — Desenvolvimento web</title>
+<desc id="desc">Sites e experiências digitais para negócios. Landing pages, sites institucionais e aplicações web.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b2b"/><stop offset="1" stop-color="#080e18"/></linearGradient><linearGradient id="accent"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#38bdf8"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#94a3b8" stroke-opacity=".07"/></pattern></defs>
+<rect width="1200" height="360" rx="24" fill="url(#bg)"/><rect width="1200" height="360" rx="24" fill="url(#grid)"/><rect x="0" y="0" width="8" height="360" rx="4" fill="url(#accent)"/>
+<circle cx="1075" cy="70" r="160" fill="#14b8a6" opacity=".055"/><circle cx="1075" cy="70" r="120" fill="none" stroke="#5eead4" stroke-opacity=".12"/>
+<g font-family="Segoe UI, Arial, sans-serif"><text x="62" y="67" fill="#5eead4" font-size="15" font-weight="700" letter-spacing="4">DESENVOLVIMENTO WEB FREELANCER</text>
+<text x="58" y="144" fill="#f8fafc" font-size="62" font-weight="750" letter-spacing="-2">João Roberto<tspan fill="#5eead4">.</tspan></text>
+<text x="62" y="195" fill="#cbd5e1" font-size="26">Seu negócio merece uma presença digital à altura.</text>
+<g font-size="15" fill="#dbeafe"><rect x="62" y="241" width="170" height="42" rx="21" fill="#172b3b" stroke="#294457"/><text x="147" y="267" text-anchor="middle">Landing pages</text><rect x="246" y="241" width="194" height="42" rx="21" fill="#172b3b" stroke="#294457"/><text x="343" y="267" text-anchor="middle">Sites institucionais</text><rect x="454" y="241" width="185" height="42" rx="21" fill="#172b3b" stroke="#294457"/><text x="546" y="267" text-anchor="middle">Aplicações web</text></g>
+<text x="62" y="330" fill="#71869e" font-size="13" letter-spacing="2">DESIGN RESPONSIVO · CÓDIGO · EXPERIÊNCIA</text>
+<g transform="translate(905 147)" font-family="Consolas, monospace" font-size="58" fill="#5eead4" opacity=".7"><text>&lt;/&gt;</text></g></g></svg>
