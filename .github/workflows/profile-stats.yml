@@ -1,0 +1,40 @@
+name: Atualizar gráficos do perfil
+
+on:
+  schedule:
+    - cron: '27 9 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update-stats.mjs
+      - .github/workflows/profile-stats.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Obter repositório
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Gerar gráficos com dados públicos
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/update-stats.mjs
+      - name: Publicar somente se os gráficos mudaram
+        run: |
+          git add assets/github-stats.svg assets/github-stats-mobile.svg assets/github-stats.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh public GitHub profile statistics'
+          git push

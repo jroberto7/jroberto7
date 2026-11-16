@@ -1,0 +1,25 @@
+{
+  "username": "jroberto7",
+  "updated": "16 DE NOV DE 2026",
+  "publicRepositories": 10,
+  "featuredProjects": 6,
+  "githubSince": 2022,
+  "languages": [
+    {
+      "name": "HTML",
+      "bytes": 5566321,
+      "percent": 92.99946235175828
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 288704,
+      "percent": 4.823530080065814
+    },
+    {
+      "name": "CSS",
+      "bytes": 130301,
+      "percent": 2.177007568175902
+    }
+  ],
+  "method": "Public owned repositories; forks and profile repository excluded from language bytes."
+}
